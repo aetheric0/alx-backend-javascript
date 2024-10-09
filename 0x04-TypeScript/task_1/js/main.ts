@@ -7,6 +7,22 @@ interface Teacher {
     [key: string]: unknown;
 }
 
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
+
+interface printTeacher {
+    firstName: string;
+    lastName: string;
+}
+
+function printTeacher(firstName: string, lastName: string) {
+    const firstLetter = firstName.slice(0, 1)
+    return `${firstLetter} ${lastName}`;
+}
+
+console.log(printTeacher('Gabriel', 'Michael'));
+
 class Teacher implements Teacher {
     firstName: string;
     lastName: string;
