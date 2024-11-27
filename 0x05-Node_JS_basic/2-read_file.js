@@ -10,8 +10,8 @@ function countStudents(path) {
     const SWEList = lines.filter((n) => n.endsWith('SWE'));
     const CSListCount = CSList.length;
     const SWEListCount = SWEList.length;
-    console.log(`Number of students in CS: ${CSListCount}. List: ${CSList.map((n) => n.split(',')[0])}`);
-    console.log(`Number of students in SWE: ${SWEListCount}. List: ${SWEList.map((n) => n.split(',')[0])}`);
+    console.log(`Number of students in CS: ${CSListCount}. List: ${CSList.map((n) => n.split(',')[0]).join(', ')}`);
+    console.log(`Number of students in SWE: ${SWEListCount}. List: ${SWEList.map((n) => n.split(',')[0]).join(', ')}`);
   } catch (err) {
     throw new Error('Cannot load the database');
   }
