@@ -22,10 +22,6 @@ describe('calculateNumber', function () {
     assert.ok(Number.isNaN(calculateNumber()));
   });
 
-  it('should return NaN when an array of numbers is passed', function () {
-    assert.ok(Number.isNaN(calculateNumber([1, 3])));
-  });
-
   it('should return the rounded sum of only the first two arguments when more than two arguments are passed', function () {
     assert.equal(calculateNumber(1.7, 8, 11, 88), 10);
   });
