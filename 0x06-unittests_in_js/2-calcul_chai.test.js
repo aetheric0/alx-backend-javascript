@@ -19,6 +19,10 @@ describe('calculateNumber', function () {
     expect(calculateNumber('DIVIDE', 6.7, 0)).to.equal('Error');
   });
 
+  it('return should be of type String', function () {
+    expect(calculateNumber('DIVIDE', 5, 0)).to.be.a('string');
+  });
+
   it('should return NaN when arguments are missing', function () {
     expect(calculateNumber()).to.be.undefined;
   });
