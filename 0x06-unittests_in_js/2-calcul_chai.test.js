@@ -1,4 +1,4 @@
-const calculateNumber = require('./1-calcul.js');
+const calculateNumber = require('./2-calcul_chai.js');
 const chai = require('chai');
 const expect = chai.expect;
 
@@ -9,7 +9,7 @@ describe('calculateNumber', function () {
 
   it('Testing when type is SUM for two negative integers', () => {
     expect(calculateNumber('SUM', -4, -5)).to.equal(-9);
-  })
+  });
 
   it('should return the difference of two numbers when type is SUBTRACT', function () {
     expect(calculateNumber('SUBTRACT', 5.7, 2.5)).to.equal(3);
@@ -17,7 +17,7 @@ describe('calculateNumber', function () {
 
   it('Testing when type is SUBTRACT with two negative integers', () => {
     expect(calculateNumber('SUBTRACT', -5, -9)).to.equal(4);
-  })
+  });
 
   it('should return the quotient of two numbers when type is DIVIDE', function () {
     expect(calculateNumber('DIVIDE', 8, 2)).to.equal(4);
@@ -29,7 +29,7 @@ describe('calculateNumber', function () {
 
   it('Testing when type is DIVIDE with two negative integers', () => {
     expect(calculateNumber('DIVIDE', -4, -2)).to.equal(2);
-  })
+  });
 
   it('return should be of type String', function () {
     expect(calculateNumber('DIVIDE', 5, 0)).to.be.a('string');
