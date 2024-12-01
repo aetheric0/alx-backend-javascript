@@ -10,6 +10,10 @@ describe('calculateNumber', function () {
     assert.equal(calculateNumber(5.7, 2.5), 9);
   });
 
+  it('should check if first number is rounded', () => {
+    assert.equal(calculateNumber(1.0, 0), 1);
+  })
+
   it('should return the rounded sum of both numbers as the correct whole number (int and float)', function () {
     assert.equal(calculateNumber(5, 6.3), 11);
   });
