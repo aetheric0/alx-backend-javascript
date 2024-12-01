@@ -7,7 +7,7 @@ describe('calculateNumber', function () {
   });
 
   it('should return the rounded sum of the numbers passed as the correct whole number', function () {
-    assert.equal(calculateNumber(5.7, 2.5), 8);
+    assert.equal(calculateNumber(5.7, 2.5), 9);
   });
 
   it('should return the rounded sum of both numbers as the correct whole number (int and float)', function () {
